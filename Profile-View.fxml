@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <right>
+        <AnchorPane fx:id="ProfileAnchorPane" prefHeight="650.0" prefWidth="450.0" style="-fx-background-color: #8AB6F9;" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="149.0" layoutY="59.0" text="PROFILE">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Label>
+            <Label layoutX="72.0" layoutY="139.0" text="Name">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="72.0" layoutY="186.0" text="CustomerID">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="72.0" layoutY="241.0" text="City">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="72.0" layoutY="289.0" text="Age">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="308.0" layoutY="139.0" text="Rahul">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="308.0" layoutY="186.0" text="202378">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="308.0" layoutY="241.0" text="Pune">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="308.0" layoutY="299.0" text="28">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </right>
+</BorderPane>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxnew.TransactionController">
+   <left>
+        <AnchorPane fx:id="TransactionAnchorPane" prefHeight="650.0" prefWidth="450.0" style="-fx-background-color: #8AB6F9;" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="95.0" layoutY="60.0" text="TRANSACTION">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Label>
+            <Label layoutX="38.0" layoutY="197.0" prefHeight="35.0" prefWidth="90.0" text="Amount">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="252.0" text="Sender CustomerID">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="297.0" text="Transaction type">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="amount_id" layoutX="214.0" layoutY="202.0" promptText="Amount" />
+            <TextField fx:id="cust_id" layoutX="214.0" layoutY="253.0" promptText="Sender CustomerID" />
+            <MenuButton fx:id="type_id" layoutX="214.0" layoutY="298.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="151.0" text="Expense">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Food" />
+                <MenuItem mnemonicParsing="false" text="Travel" />
+                  <MenuItem mnemonicParsing="false" text="Education" />
+                  <MenuItem mnemonicParsing="false" text="Shopping" />
+                  <MenuItem mnemonicParsing="false" text="Gadgets" />
+                  <MenuItem mnemonicParsing="false" text="Rent" />
+                  <MenuItem mnemonicParsing="false" text="Other" />
+              </items>
+            </MenuButton>
+            <Button fx:id="transaction_process" layoutX="146.0" layoutY="544.0" mnemonicParsing="false" onAction="#transaction_process" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: #00246B;" text="TRANSACT" textFill="WHITE" />
+            <Label layoutX="42.0" layoutY="343.0" text="Your CustomerID">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="YouCustID" layoutX="214.0" layoutY="344.0" promptText="CustomerID" />
+            </children>
+        </AnchorPane>
+   </left>
+</BorderPane>

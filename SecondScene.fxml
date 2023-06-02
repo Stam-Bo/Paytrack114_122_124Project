@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="650.0" style="-fx-background-color: #00246B;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxnew.SecondController">
+   <right>
+      <AnchorPane fx:id="newAnchorPane" prefHeight="450.0" prefWidth="450.0" style="-fx-background-color: #8AB6F9;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="210.0" layoutY="339.0" prefHeight="95.0" prefWidth="225.0" text="Welcome ">
+               <font>
+                  <Font size="51.0" />
+               </font>
+            </Label>
+            <Label layoutX="247.0" layoutY="405.0" prefHeight="36.0" prefWidth="173.0" text="Please select from menu....">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="tryyy" layoutX="173.0" layoutY="150.0" prefHeight="111.0" prefWidth="73.0" />
+         </children></AnchorPane>
+   </right>
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00246B;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="26.0" layoutY="45.0" prefHeight="17.0" prefWidth="148.0" text="PayTrack" textAlignment="CENTER" textFill="#cadcfc">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="100.0" prefHeight="20.0" prefWidth="151.0" text="Payment and Expense" textFill="#cadcfc" />
+            <Label layoutX="35.0" layoutY="117.0" text="Management Software" textFill="#cadcfc" />
+            <Label layoutX="65.0" layoutY="221.0" prefHeight="35.0" prefWidth="70.0" text="MENU" textFill="#cadcfc">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Line endX="100.0" fill="#8ab6f9" layoutX="80.0" layoutY="100.0" startX="-65.16666412353516" startY="-7.62939453125E-6" stroke="#8ab6f9" />
+            <VBox layoutX="19.0" layoutY="258.0" prefHeight="200.0" prefWidth="146.0">
+               <children>
+                  <AnchorPane fx:id="ProfileOption" onMouseClicked="#ProfileOnAction" prefHeight="50.0" prefWidth="146.0" style="-fx-background-color: #8AB6F9;">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <children>
+                        <Label layoutX="56.0" layoutY="11.0" text="Profile">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="BalanceOption" layoutX="10.0" layoutY="10.0" onMouseClicked="#BalanceOnAction" prefHeight="50.0" prefWidth="159.0" style="-fx-background-color: #8AB6F9;">
+                     <children>
+                        <Label layoutX="51.0" layoutY="11.0" text="Expense">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Line endX="80.33332824707031" layoutX="81.0" startX="-81.00000762939453" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="TranscationOption" layoutX="10.0" layoutY="60.0" onMouseClicked="#TransactionOnAction" prefHeight="50.0" prefWidth="146.0" style="-fx-background-color: #8AB6F9;">
+                     <children>
+                        <Label layoutX="36.0" layoutY="11.0" text="Transaction">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Line endX="86.16667175292969" layoutX="76.0" startX="-76.00000762939453" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="ExpenseOption" layoutX="10.0" layoutY="110.0" onMouseClicked="#ExpenseOnAction" opacity="0.0" prefHeight="50.0" prefWidth="146.0" style="-fx-background-color: #8AB6F9;">
+                     <children>
+                        <Label layoutX="49.0" layoutY="11.0" text="Expense">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Line endX="100.0" layoutX="60.0" startX="-60.50000762939453" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <Line endX="-92.00000762939453" endY="152.33331298828125" layoutX="111.0" layoutY="257.0" startX="-92.00000762939453" startY="1.0" />
+            <Line endX="-90.66667175292969" endY="151.0" layoutX="273.0" layoutY="257.0" startX="-91.33332824707031" startY="1.0" />
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
